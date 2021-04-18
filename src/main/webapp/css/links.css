@@ -1,0 +1,15 @@
+a:link,
+a:visited,
+button {
+  color: #6d7a86;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 3px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
