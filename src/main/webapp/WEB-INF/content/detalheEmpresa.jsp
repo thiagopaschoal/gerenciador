@@ -4,10 +4,10 @@
 
 <head>
     <meta charset=UTF-8>
-    <link rel="stylesheet" href="./css/reset.css"/>
-    <link rel="stylesheet" href="./css/links.css"/>
-    <link rel="stylesheet" href="./css/pages.css"/>
-    <link rel="stylesheet" href="./css/tables.css"/>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/links.css"/>
+    <link rel="stylesheet" href="../css/pages.css"/>
+    <link rel="stylesheet" href="../css/tables.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <title>Editar Empresa</title>
@@ -16,7 +16,7 @@
 <body>
     <header class="topNavBar">Editar empresa</header>
     <main>
-        <form action="/gerenciador/editarEmpresa?id=${empresa.id}" method="POST" id="formulario">
+        <form action="/gerenciador/company?action=update&id=${empresa.id}" method="POST" id="formulario">
             <section style="margin: 1.5rem;">
                 <label for="nome">Nome: </label>
                 <input value="${empresa.nome}" required name="nome" type="text"/>

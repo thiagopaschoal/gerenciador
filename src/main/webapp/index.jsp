@@ -15,8 +15,8 @@
     <main>
         <section id="opcoes">
             <p>O que você deseja fazer?</p>
-            <a href="/gerenciador/novaEmpresa.jsp" id="menu-nova-empresa">Nova Empresa?</a>
-            <a href="/gerenciador/empresas" id="menu-empresas">Ver Empresas</a>
+            <a href="/gerenciador/company?action=new" id="menu-nova-empresa">Nova Empresa?</a>
+            <a href="/gerenciador/company?action=list" id="menu-empresas">Ver Empresas</a>
         </section>
     </main>
 </body>

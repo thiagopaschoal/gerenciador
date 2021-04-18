@@ -4,10 +4,10 @@
 
 <head>
     <meta charset=UTF-8>
-    <link rel="stylesheet" href="./css/reset.css"/>
-    <link rel="stylesheet" href="./css/links.css"/>
-    <link rel="stylesheet" href="./css/pages.css"/>
-    <link rel="stylesheet" href="./css/tables.css"/>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/links.css"/>
+    <link rel="stylesheet" href="../../css/pages.css"/>
+    <link rel="stylesheet" href="../../css/tables.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
     <title>Listar Empresa</title>
@@ -33,8 +33,8 @@
                                 <td>${empresa.nome}</td>
                                 <td>${empresa.tamanho}</td>
                                 <td style="text-align: center;">
-                                    <span><a href="/gerenciador/deletarEmpresa?id=${empresa.id}">Deletar</a></span>
-                                    <span><a href="/gerenciador/empresa?id=${empresa.id}">Editar</a></span>
+                                    <span><a href="/gerenciador/company?action=delete&id=${empresa.id}">Deletar</a></span>
+                                    <span><a href="/gerenciador/company?action=detail&id=${empresa.id}">Editar</a></span>
                                 </td>
                             </tr>
                         </c:forEach>
@@ -42,7 +42,7 @@
                 </c:otherwise>
             </c:choose>
             <section style="margin-top: 1.5rem;">
-                <a href="/gerenciador/novaEmpresa.jsp">Nova empresa</a>
+                <a href="/gerenciador/company?action=new">Nova empresa</a>
             </section>
         </section>
     </main>
