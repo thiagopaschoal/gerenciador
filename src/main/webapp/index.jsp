@@ -13,11 +13,7 @@
 <body>
     <header class="topNavBar">Bem-Vindo ao Gerenciador de Empresas</header>
     <main>
-        <section id="opcoes">
-            <p>O que você deseja fazer?</p>
-            <a href="/gerenciador/company?action=new" id="menu-nova-empresa">Nova Empresa?</a>
-            <a href="/gerenciador/company?action=list" id="menu-empresas">Ver Empresas</a>
-        </section>
+        <a href="company?action=loginForm">Login</a>
     </main>
 </body>
 

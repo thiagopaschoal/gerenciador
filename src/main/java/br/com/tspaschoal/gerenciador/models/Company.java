@@ -1,12 +1,12 @@
 package br.com.tspaschoal.gerenciador.models;
 
-public class Empresa {
+public class Company {
 
     private int id;
     private String nome;
     private String tamanho;
 
-    public Empresa(String nome, String tamanho) {
+    public Company(String nome, String tamanho) {
         this.nome = nome;
         this.tamanho = tamanho;
     }
